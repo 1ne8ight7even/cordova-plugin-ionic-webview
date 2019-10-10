@@ -518,9 +518,6 @@ NSTimer *timer;
 }
 
 // This forwards the methods that are in the header that are not implemented here.
-// Both WKWebView and UIWebView implement the below:
-//     loadHTMLString:baseURL:
-//     loadRequest:
 - (id)forwardingTargetForSelector:(SEL)aSelector
 {
     return _engineWebView;
